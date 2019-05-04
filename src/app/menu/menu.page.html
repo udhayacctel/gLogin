@@ -1,0 +1,20 @@
+<ion-app>
+    <ion-split-pane contentId="menu-content">
+      <ion-menu contentId="menu-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Menu</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content>
+          <ion-list>
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+
+            </ion-menu-toggle>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      <ion-router-outlet id="menu-content" main></ion-router-outlet>
+    </ion-split-pane>
+  </ion-app>
+  
